@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import TitleHeader from "../components/TitleHeader";
-import { techStackImgs } from "../Constants"
+import { techStackImgs } from "../Constants/index"
 
 gsap.registerPlugin(ScrollTrigger);
 
