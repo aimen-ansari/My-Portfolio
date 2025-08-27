@@ -197,7 +197,6 @@ const expCards = [
     ],
   },
 
-
   {
     review:
       "Her full stack development skills brought scalability and efficiency to web projects, with solid backend logic and API integrations using ASP.NET Core.",
