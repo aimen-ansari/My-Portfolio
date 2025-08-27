@@ -28,13 +28,13 @@ const Popup = () => {
   return (
     <div className={`popup-overlay ${isAnimating ? 'show' : ''}`}>
       <div className={`popup-container ${isAnimating ? 'show' : ''}`}>
-        <button 
+        {/* <button 
           className="close-button" 
           onClick={handleClose}
           aria-label="Close popup"
         >
           ×
-        </button>
+        </button> */}
         
         <div className="popup-content">
           <div className="icon-container">
