@@ -172,7 +172,7 @@ const expCards = [
       "Aimen has demonstrated strong expertise in frontend technologies, delivering responsive and visually appealing interfaces while ensuring smooth user experiences.",
     imgPath: "/images/fiverr.png",
     logoPath: "/images/fv.png",
-    title: "Freelance | Website Developer",
+    title: "Freelance | Front-End Developer",
     date: "January 2024 - Current",
     responsibilities: [
       "Developed dynamic user interfaces using React.Js and JavaScript.",
