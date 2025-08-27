@@ -100,7 +100,7 @@ const techStackImgs = [
   },
   {
     name: "ASP.NET Core",
-    imgPath: "/images/logos/.net.png",
+    imgPath: "/images/logos/net.png",
   },
 
   {
