@@ -60,7 +60,7 @@ const Hero = () => {
 
             <Button
               text="Click to Scroll"
-              className="md:w-80 md:h-16 w-80 h-12"
+              className="md:w-80 md:h-16 w-70 h-12"
               id="button"
             />
           </div>
