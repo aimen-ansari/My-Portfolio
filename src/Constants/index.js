@@ -31,7 +31,7 @@ const words = [
 const counterItems = [
   { value: 10, suffix: "+", label: "Technologies Mastered" },
   { value: 20, suffix: "+", label: "Projects Delivered" },
-  { value: 20, suffix: "+", label: "Certifications & Courses" },
+  { value: 25, suffix: "+", label: "Certifications & Courses" },
   { value: 100, suffix: "%", label: "Commitment to Quality" },
 ];
 
@@ -85,13 +85,13 @@ const abilities = [
   {
     imgPath: "/images/time.png",
     title: "Continuous Growth",
-    desc: "Always learning, adapting, and improving to stay aligned with the latest trends and tools.",
+    desc: "Always learning, adapting, and improving, currently exploring AI/ML to stay ahead with the latest trends and tools.",
   },
 ];
 
 const techStackImgs = [
   {
-    name: "React ",
+    name: "React Js",
     imgPath: "/images/logos/react.png",
   },
   {
@@ -166,6 +166,22 @@ const techStackIcons = [
   },
 ];
 const expCards = [
+  
+  {
+    review:
+      "Aimen has demonstrated strong expertise in frontend technologies, delivering responsive and visually appealing interfaces while ensuring smooth user experiences.",
+    imgPath: "/images/fiverr.png",
+    logoPath: "/images/fv.png",
+    title: "Freelance | Website Developer",
+    date: "January 2024 - Current",
+    responsibilities: [
+      "Developed dynamic user interfaces using React.Js and JavaScript.",
+      "Developed numerous ecommerce stores on WordPress.",
+      "Experienced in optimizing websites for higher search rankings and visibility.",
+      "Improved website performance, accessibility, and responsiveness.",
+    ],
+  },
+
   {
     review:
       "Aimen’s freelancing journey on Upwork reflects her versatility — delivering both frontend and backend solutions along with UI/UX designs, consistently meeting client expectations worldwide.",
@@ -174,26 +190,14 @@ const expCards = [
     title: "Freelance | Full-Stack Web Developer",
     date: "March 2022 - Current",
     responsibilities: [
-      "Delivered full-stack web solutions using ASP.NET Core for backend and React.js for frontend.",
-      "Designed and implemented responsive UI/UX layouts tailored to client requirements.",
-      "Created visual assets and prototypes using Adobe XD, Photoshop, and Illustrator.",
+      "Delivered full-stack web solutions using React.Js for frontend and ASP.NET Core for backend.",
+      "Integrated REST APIs with frontend applications to ensure seamless data flow.",
+      "Developed and deployed full-stack applications with both frontend and backend logic.",
       "Collaborated with international clients on Upwork, ensuring on-time and high-quality project delivery.",
     ],
   },
 
-  {
-    review:
-      "Aimen has demonstrated strong expertise in frontend technologies, delivering responsive and visually appealing interfaces while ensuring smooth user experiences.",
-    imgPath: "/images/fiverr.png",
-    logoPath: "/images/fv.png",
-    title: "Freelance | Front-End Developer",
-    date: "January 2024 - 2025",
-    responsibilities: [
-      "Developed dynamic user interfaces using React.js and JavaScript.",
-      "Transformed UI/UX designs into functional, pixel-perfect web pages.",
-      "Improved website performance, accessibility, and responsiveness.",
-    ],
-  },
+
   {
     review:
       "Her full stack development skills brought scalability and efficiency to web projects, with solid backend logic and API integrations using ASP.NET Core.",
@@ -202,9 +206,9 @@ const expCards = [
     title: "UI-UX Designer | StahlTech",
     date: "June 2024 - Present",
     responsibilities: [
-      "Built and maintained APIs using ASP.NET Core for backend services.",
-      "Integrated REST APIs with frontend applications to ensure seamless data flow.",
-      "Developed and deployed full-stack applications with both frontend and backend logic.",
+      "Designed and implemented responsive UI/UX layouts tailored to client requirements.",
+      "Transformed UI/UX designs into functional, pixel-perfect web pages.",
+      "Created visual assets and prototypes using Photoshop, Figma and Corel Draw.",
     ],
   },
 ];
