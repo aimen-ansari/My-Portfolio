@@ -1,0 +1,540 @@
+/* Modern Tech-Inspired Popup Styling */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-container {
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 24px;
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(148, 163, 184, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  max-width: 520px;
+  width: 100%;
+  transform: translateY(40px) scale(0.85);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+.popup-container.show {
+  transform: translateY(0) scale(1);
+}
+
+/* Glassmorphism effect */
+.popup-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 255, 255, 0.12) 0%, 
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  pointer-events: none;
+}
+
+/* Accent border gradient */
+.popup-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #ef4444);
+  border-radius: 24px 24px 0 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: rgba(248, 250, 252, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1;
+}
+
+.close-button:hover {
+  background: rgba(248, 250, 252, 0.15);
+  border-color: rgba(148, 163, 184, 0.3);
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.close-button:active {
+  transform: scale(0.95);
+}
+
+.popup-content {
+  padding: 50px 40px 35px;
+  text-align: center;
+  color: #f8fafc;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+.gpu-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+.gpu-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+.chip {
+  width: 40px;
+  height: 5px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.chip:nth-child(2) {
+  width: 30px;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+}
+
+.chip:nth-child(3) {
+  width: 35px;
+  background: linear-gradient(90deg, #ec4899, #ef4444);
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.popup-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #cbd5e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+}
+
+.popup-message {
+  margin-bottom: 35px;
+  line-height: 1.7;
+}
+
+.popup-message p {
+  margin: 0 0 18px 0;
+  font-size: 16px;
+  color: #cbd5e1;
+  font-weight: 400;
+}
+
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.requirements-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #e2e8f0;
+  font-weight: 500;
+  padding: 12px 16px;
+  background: rgba(248, 250, 252, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.requirements-list li:hover {
+  background: rgba(248, 250, 252, 0.08);
+  border-color: rgba(148, 163, 184, 0.2);
+  transform: translateX(4px);
+}
+
+.bullet {
+  margin-right: 12px;
+  font-size: 16px;
+  min-width: 24px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.notice {
+  font-size: 14px;
+  color: #94a3b8;
+  font-style: italic;
+  margin-top: 20px !important;
+  padding: 16px;
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ok-button {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 
+    0 8px 25px -8px rgba(59, 130, 246, 0.4),
+    0 0 0 1px rgba(59, 130, 246, 0.2);
+  text-transform: none;
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ok-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.ok-button:hover::before {
+  left: 100%;
+}
+
+.ok-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 35px -8px rgba(59, 130, 246, 0.5),
+    0 0 0 1px rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+
+.ok-button:active {
+  transform: translateY(-1px);
+  box-shadow: 
+    0 6px 20px -8px rgba(59, 130, 246, 0.4),
+    0 0 0 1px rgba(59, 130, 246, 0.2);
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+  .popup-overlay {
+    padding: 16px;
+  }
+  
+  .popup-container {
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 0 8px;
+  }
+  
+  .popup-content {
+    padding: 40px 28px 28px;
+  }
+  
+  .popup-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-message p {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  
+  .requirements-list li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+  }
+  
+  .notice {
+    font-size: 13px;
+    padding: 14px;
+  }
+  
+  .ok-button {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+  
+  .close-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    top: 16px;
+    right: 16px;
+  }
+  
+  .gpu-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .chip {
+    width: 35px;
+    height: 4px;
+  }
+  
+  .chip:nth-child(2) {
+    width: 26px;
+  }
+  
+  .chip:nth-child(3) {
+    width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-overlay {
+    padding: 12px;
+  }
+  
+  .popup-container {
+    margin: 0 4px;
+    border-radius: 18px;
+  }
+  
+  .popup-content {
+    padding: 35px 24px 24px;
+  }
+  
+  .popup-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  
+  .popup-message p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  
+  .requirements-list li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding: 9px 12px;
+  }
+  
+  .bullet {
+    font-size: 14px;
+    min-width: 20px;
+  }
+  
+  .notice {
+    font-size: 12px;
+    padding: 12px;
+  }
+  
+  .ok-button {
+    padding: 10px 24px;
+    font-size: 14px;
+    border-radius: 14px;
+  }
+  
+  .close-button {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+    top: 14px;
+    right: 14px;
+  }
+  
+  .gpu-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .chip {
+    width: 30px;
+    height: 3px;
+  }
+  
+  .chip:nth-child(2) {
+    width: 22px;
+  }
+  
+  .chip:nth-child(3) {
+    width: 26px;
+  }
+}
+
+/* Ultra-small screens */
+@media (max-width: 360px) {
+  .popup-content {
+    padding: 30px 20px 20px;
+  }
+  
+  .popup-title {
+    font-size: 20px;
+  }
+  
+  .gpu-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .requirements-list li {
+    padding: 8px 10px;
+  }
+  
+  .ok-button {
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Animation for requirement items */
+.requirements-list li {
+  animation: slideInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.requirements-list li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.requirements-list li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.requirements-list li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.requirements-list li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus states for accessibility */
+.close-button:focus,
+.ok-button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .popup-overlay,
+  .popup-container,
+  .close-button,
+  .ok-button,
+  .requirements-list li,
+  .gpu-icon,
+  .chip {
+    animation: none;
+    transition: none;
+  }
+  
+  .popup-container.show {
+    transform: none;
+  }
+}
+

@@ -7,12 +7,10 @@ import FeatureCards from "./sections/FeatureCards";
 import ExperienceSection from "./sections/ExperienceSection";
 import TechStack from "./sections/TechStack";
 import Testimonials from "./sections/Testimonials";
-import Contact from './sections/Contact';
+import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Scroll from "./sections/Scroll";
-
-
-
+import Popup from "./components/Popup";
 
 const App = () => {
   return (
@@ -20,14 +18,15 @@ const App = () => {
       <Navbar />
       <Hero />
       <Showcase />
-     {/* <LogoShowcase /> */}
+      {/* <LogoShowcase /> */}
       <FeatureCards />
       <ExperienceSection />
-      <TechStack/>
-      <Testimonials/>
-      <Contact/>
-      <Footer/>
-    <Scroll/>
+      <TechStack />
+      <Testimonials />
+      <Contact />
+      <Footer />
+      <Scroll />
+      <Popup />
     </>
   );
 };
