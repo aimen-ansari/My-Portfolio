@@ -12,6 +12,7 @@ const Showcase = () => {
   const Project3Ref = useRef(null);
   const Project4Ref = useRef(null);
   const Project5Ref = useRef(null);
+   const Project6Ref = useRef(null);
 
   useGSAP(() => {
     gsap.fromTo(
@@ -47,6 +48,7 @@ const Showcase = () => {
 
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
+      
       <div className="w-full">
         <div className="showcase-layout">
           <div className="project-list-wrapper overflow-hidden">
@@ -99,9 +101,9 @@ const Showcase = () => {
               <h2>Tigers Eye Recruitment - Recruiting Website</h2>
             </div>
 
-            <div className="project" ref={Project1Ref}>
+            <div className="project" ref={Project6Ref}>
               <div className="image-wrapper">
-                <img src="/images/project1.png" alt="First Project" />
+                <img src="/images/project6.png" alt="Sixth Project" />
               </div>
               <div className="text-content">
                 <h2>Open Skills Source - A Self Project </h2>

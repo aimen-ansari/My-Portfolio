@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="flex flex-col justify-center">
-          <p>Terms & Conditions</p>
+          <p>Design. Develop. Deliver.</p>
         </div>
         <div className="socials">
           {socialImgs.map((socialImg, index) => (
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
-            © {new Date().getFullYear()} Aimen Ansari. All rights reserved.
+            © {new Date().getFullYear()} Aimen Ansari. All Rights Reserved.
           </p>
         </div>
       </div>

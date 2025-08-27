@@ -35,7 +35,6 @@ const counterItems = [
   { value: 100, suffix: "%", label: "Commitment to Quality" },
 ];
 
-
 const logoIconsList = [
   {
     imgPath: "/images/logos/company-logo-1.png",
@@ -90,7 +89,6 @@ const abilities = [
   },
 ];
 
-
 const techStackImgs = [
   {
     name: "React ",
@@ -117,11 +115,11 @@ const techStackImgs = [
     name: "WordPress ",
     imgPath: "/images/wp.png",
   },
-{
+  {
     name: "Bootstrap CSS",
     imgPath: "/images/logos/bootstrap.png",
   },
- {
+  {
     name: "Three Js",
     imgPath: "/images/logos/threejs.png",
   },
@@ -169,10 +167,11 @@ const techStackIcons = [
 ];
 const expCards = [
   {
-    review: "Aimen is a skilled WordPress developer, experienced in creating responsive, dynamic, and user-friendly websites. She delivers tailored solutions with attention to detail, ensuring client satisfaction and professional results every time.",
-    imgPath: "/images/wordpress.png",
-    logoPath: "/images/wp.png",
-    title: "Wordpress Developer",
+    review:
+      "Aimen’s freelancing journey on Upwork reflects her versatility — delivering both frontend and backend solutions along with UI/UX designs, consistently meeting client expectations worldwide.",
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logo3.png",
+    title: "Freelance | Full-Stack Web Developer",
     date: "March 2022 - Current",
     responsibilities: [
       "Delivered full-stack web solutions using ASP.NET Core for backend and React.js for frontend.",
@@ -181,12 +180,14 @@ const expCards = [
       "Collaborated with international clients on Upwork, ensuring on-time and high-quality project delivery.",
     ],
   },
+
   {
-    review: "Aimen has demonstrated strong expertise in frontend technologies, delivering responsive and visually appealing interfaces while ensuring smooth user experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2024 - Present",
+    review:
+      "Aimen has demonstrated strong expertise in frontend technologies, delivering responsive and visually appealing interfaces while ensuring smooth user experiences.",
+    imgPath: "/images/fiverr.png",
+    logoPath: "/images/fv.png",
+    title: "Freelance | Front-End Developer",
+    date: "January 2024 - 2025",
     responsibilities: [
       "Developed dynamic user interfaces using React.js and JavaScript.",
       "Transformed UI/UX designs into functional, pixel-perfect web pages.",
@@ -194,32 +195,19 @@ const expCards = [
     ],
   },
   {
-    review: "Her full stack development skills brought scalability and efficiency to web projects, with solid backend logic and API integrations using ASP.NET Core.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2024 - December 2024",
+    review:
+      "Her full stack development skills brought scalability and efficiency to web projects, with solid backend logic and API integrations using ASP.NET Core.",
+    imgPath: "/images/stahl.png",
+    logoPath: "/images/st.png",
+    title: "UI-UX Designer | StahlTech",
+    date: "June 2024 - Present",
     responsibilities: [
       "Built and maintained APIs using ASP.NET Core for backend services.",
       "Integrated REST APIs with frontend applications to ensure seamless data flow.",
       "Developed and deployed full-stack applications with both frontend and backend logic.",
     ],
   },
-  {
-    review: "Aimen’s freelancing journey on Upwork reflects her versatility — delivering both frontend and backend solutions along with UI/UX designs, consistently meeting client expectations worldwide.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "Upwork Freelancer | Full Stack & UI/UX Designer",
-    date: "March 2022 - Current",
-    responsibilities: [
-      "Delivered full-stack web solutions using ASP.NET Core for backend and React.js for frontend.",
-      "Designed and implemented responsive UI/UX layouts tailored to client requirements.",
-      "Created visual assets and prototypes using Adobe XD, Photoshop, and Illustrator.",
-      "Collaborated with international clients on Upwork, ensuring on-time and high-quality project delivery.",
-    ],
-  },
 ];
-
 
 const expLogos = [
   {
@@ -258,8 +246,8 @@ const testimonials = [
     imgPath: "/images/client3.png",
   },
   {
-    name: "Trimrr",
-    mentions: "@trimrr",
+    name: "Fiverr Client",
+    mentions: "@fiverr",
     review:
       "Aimen delivered exactly what we needed — a fast, clean, and functional website. She is really skilled in Backend Technologies like ASP.NET Core & Supabase She was prompt, professional, and always open to feedback. I highly recommend her for any business looking to elevate their online presence.",
     imgPath: "/images/client4.png",
@@ -280,10 +268,10 @@ const testimonials = [
   },
 ];
 const socialImgs = [
-    {
-    name: "Github",
-    imgPath: "/images/github.png",
-    link: "https://www.facebook.com/yourusername",
+  {
+    name: "Instagram",
+    imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/aimen.dev",
   },
   {
     name: "Upwork",
@@ -296,7 +284,6 @@ const socialImgs = [
     link: "https://www.linkedin.com/in/aimen92/",
   },
 ];
-
 
 export {
   words,

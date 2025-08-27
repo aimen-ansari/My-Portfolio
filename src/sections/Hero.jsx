@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Aimen, a Full-Stack Developer with a passion of creating
+              Hi, I’m Aimen, a Full-Stack Web Developer with a passion of creating
               functional websites.
             </p>
 
